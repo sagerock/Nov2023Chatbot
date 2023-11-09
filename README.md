@@ -18,7 +18,7 @@ Follow these steps to get the chatbot up and running on your local machine.
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/sagerock/Nov2023Chatbot
 cd your-repository-name
 ```
 
@@ -90,7 +90,5 @@ If you wish to contribute to this project, please fork the repository and submit
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-```
+This project is licensed under the MIT License
 
-Be sure to include any additional setup steps that are specific to your project, such as database migrations or environment variable configuration. Additionally, if you have a license file, replace the placeholder with the actual filename (`LICENSE` or `LICENSE.txt`).
