@@ -75,12 +75,12 @@ def send_message():
         message = prompt['content'] + " " + message
 
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4-1106-preview",
             messages=[{"role": "user", "content": message}]
         )
         return jsonify(response), 200
-    except openai.error.OpenAIError as e:
+    except openai.error.APIError as e:
         return jsonify({"error": str(e)}), 500
 
 @app.route('/custom_prompts', methods=['GET'])
