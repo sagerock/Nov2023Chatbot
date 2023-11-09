@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import json
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_random_secret_key'  # Set this to a complex random value
 
 # Load environment variables from .env file
 load_dotenv()
