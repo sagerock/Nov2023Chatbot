@@ -104,6 +104,11 @@ By default, the server will start on `http://127.0.0.1:5000`. Open this address 
 
 The front-end code is contained within the `templates` and `static` directories. You can modify the HTML, CSS, and JavaScript files in these directories to change the appearance and functionality of the web interface.
 
+### OpenAI API
+
+You need to create a .env file and add a line like this:
+OPENAI_API_KEY='sk-GoGeTYouRapIkeYandPUTitHERE'
+
 ## Usage
 
 Once the application is running, select a specialization from the dropdown menu and type your message into the chat input. Click the "Send" button to receive a response from the chatbot.
