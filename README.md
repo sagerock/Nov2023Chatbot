@@ -66,6 +66,8 @@ The `data.json` file is structured as an array of prompt objects, where each pro
 
 To add a new prompt, simply append a new object to the array with a unique `prompt_id` and the prompt content you wish to use.
 
+Then add your new `prompt_id` to the 'specialization-container' in index.html
+
 ### Running the Application
 
 To start the Flask server, run the following command:
