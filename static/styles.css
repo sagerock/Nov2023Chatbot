@@ -1,5 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
+  font-size: 16px;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
@@ -100,6 +101,7 @@ body {
     justify-content: flex-start;
     height: auto;
     padding-top: 50px;
+    font-size: 18px;
   }
   #chat-container {
     margin: 0 10px;
@@ -107,7 +109,7 @@ body {
   }
   .message {
     padding: 5px;
-    font-size: 0.9rem;
+    font-size: 18px;
   }
   #message-input, #send-button {
     margin: 5px;
