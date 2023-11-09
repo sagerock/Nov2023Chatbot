@@ -1,5 +1,5 @@
 Flask==2.0.1
 Werkzeug==2.0.1
 python-dotenv==0.20.0
-openai==0.10.2
+openai
 gunicorn==20.1.0
