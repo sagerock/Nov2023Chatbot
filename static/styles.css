@@ -31,19 +31,18 @@ body {
 .message {
   padding: 5px 10px;
   border-radius: 5px;
-  max-width: 80%;
+  width: 100%; /* Changed from max-width to width and set to 100% */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
 }
 
 .user-message {
   background: #0f62fe;
   color: white;
-  align-self: flex-end;
 }
 
 .bot-message {
   background: #eeeeee;
   color: black;
-  align-self: flex-start;
 }
 
 #message-input {

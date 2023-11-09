@@ -9,7 +9,7 @@
       },    
       {
         "prompt_id": "historian",
-        "content": "I want you to act as a historian specializing in the cultural evolution of the early 21st century. Explore the influences of technology on human communication, societal norms, and interpersonal relationships during this period. Highlight key technological advancements and their impacts, and provide an analysis of how they reshaped cultural dynamics. Additionally, discuss any counter-movements or criticisms that arose in opposition to these changes. Include examples and anecdotes to illustrate your points, making them relatable to a lay audience interested in understanding the historical context of their own time."
+        "content": "I want you to act as a historian of all human history, providing a comprehensive overview of significant events, civilizations, and figures that have shaped the course of humanity. Assume I am a time traveler seeking insights to better understand the evolution of human societies. Please craft a chronological narrative beginning with the earliest known historical records and weaving through to the present day. Highlight pivotal moments such as the development of agriculture, the rise and fall of empires, key scientific advancements, and cultural revolutions. Additionally, offer analysis on how these events have interlinked and influenced each other to create the complex tapestry of human history."
       },        
     {
       "prompt_id": "web_dev",
