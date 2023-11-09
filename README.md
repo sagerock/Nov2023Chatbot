@@ -6,7 +6,7 @@ This project is a Flask-based chatbot that uses OpenAI's GPT models to answer qu
 ## Note From Sage
 Hi all :)
 
-I am not a developer of python. I do ok with html and css. But I've been spending a lot of time with experimenting with other people's bots.
+I am not a developer of python. I do ok with html and css. But I've been spending a lot of time experimenting with other people's bots.
 
 I've put together a very simple bot that pulls from a bunch of pre-defined prompts. You just select the prompt you want to use from a drop-down box and then go to town.
 
@@ -21,6 +21,8 @@ I wanted something that was SUPER EASY to work with. It's just written in Flask.
 I built this mostly with the help of ChatGPT 4. I don't know anything. It could be a worm-hole to destroy the universe for all I know. So use it at your own risk.
 
 Here's what it looks like:
+
+
 ![Chatbot Image](./images/bot-screenshot.png "Chatbot")
 
 ## Setup Instructions
