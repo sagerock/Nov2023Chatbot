@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 import json
 
-client = OpenAI()
 
 app = Flask(__name__)
 
@@ -77,12 +76,16 @@ def send_message():
         message = prompt['content'] + " " + message
 
     try:
-        response = client.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4-1106-preview",
             messages=[{"role": "user", "content": message}]
         )
         return jsonify(response), 200
-    except openai.error.APIError as e:
+    except openai.Error as e:
+    # Handle the generic openai errors
+        return jsonify({"error": str(e)}), 500
+    except Exception as e:
+    # This will catch any other exceptions that are not caught by the specific openai.Error
         return jsonify({"error": str(e)}), 500
 
 @app.route('/custom_prompts', methods=['GET'])
