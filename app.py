@@ -4,6 +4,8 @@ import os
 from dotenv import load_dotenv
 import json
 
+client = OpenAI()
+
 app = Flask(__name__)
 
 # Load environment variables from .env file
