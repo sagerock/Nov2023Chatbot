@@ -64,7 +64,7 @@ def send_message():
     data = request.json
     message = data.get('message')
     prompt_id = data.get('prompt_id')
-    temperature = data.get('temperature', 0.7)
+    temperature = data.get('temperature', 0.2)
 
     if not message:
         return jsonify({"error": "Missing message"}), 400
