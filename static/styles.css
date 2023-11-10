@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   background-color: #f5f5f5;
   margin: 0;
-  padding: 0;
+  padding: 2vh 2vw; /* 2% of viewport height for vertical padding and 2% of viewport width for horizontal padding */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,8 @@ body {
 
 #chat-container {
   max-width: 500px;
-  width: 100%;
+  min-width: 320px; /* This will ensure that the container does not get too small */
+  width: 100%; /* This will ensure that the container takes up 100% of the parent element's width, up to the max-width */
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -20,8 +21,9 @@ body {
 }
 
 #conversation {
-  height: 400px;
-  overflow-y: auto;
+  min-height: 20vh; /* 20% of the viewport height */
+  max-height: 50vh; /* 50% of the viewport height */
+  overflow-y: auto; /* Allows scrolling within the container if content exceeds the max-height */
   padding: 10px;
   background: #e7e7e7;
   display: flex;
@@ -30,7 +32,8 @@ body {
 }
 
 .message {
-  padding: 5px 10px;
+  max-width: 100%; /* Full width of the container */
+  padding: 0.5em; /* Scales with the font size */
   border-radius: 5px;
   width: 100%; /* Changed from max-width to width and set to 100% */
   box-sizing: border-box; /* Ensures padding is included in the total width */
@@ -48,26 +51,32 @@ body {
 
 #message-input {
   width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px;
+  padding: 1em;
+  margin: 1%;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 #send-button {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px;
-  background: #0f62fe;
-  color: white;
+  min-width: 44px; /* Minimum clickable area width */
+  min-height: 44px; /* Minimum clickable area height */
+  width: calc(100% - 20px); /* Full width minus margin */
+  padding: 10px; /* Padding for visual appearance */
+  margin: 10px; /* Margin around the button */
+  background: #0f62fe; /* Button color */
+  color: white; /* Text color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px; /* Adjustable based on your design preference */
+  text-align: center; /* Center the text inside the button */
+  line-height: 1.5; /* Gives a good height to the text, making the button taller if no min-height is set */
+  box-sizing: border-box; /* Include padding in the width and height */
 }
 
 #send-button:hover {
-  background: #0053e7;
+  background: #0053e7; /* Slightly darker color on hover */
 }
 
 
