@@ -108,8 +108,7 @@ body {
 @media (max-width: 600px) {
   body {
     justify-content: flex-start;
-    height: 95vh;
-    padding-top: 0px;
+    height: auto;
     font-size: 18px;
   }
   #chat-container {
