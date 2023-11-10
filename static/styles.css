@@ -124,6 +124,35 @@ body {
     margin: 5px;
     padding: 8px;
   }
+  .select-wrapper {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    display: inline-block; /* Wrap around the select element */
+  }
+  
+  .select-wrapper select {
+    background: white;
+    border: 1px solid #888; /* Restores the border */
+    -webkit-appearance: none; /* Removes the default arrow for iOS */
+    -moz-appearance: none; /* Removes the default arrow for Firefox */
+    appearance: none; /* Removes the default arrow */
+    padding: 0.8em 3em 0.8em 0.8em; /* Top, right, bottom, left padding */
+    font-size: 1em; /* Sets the font size inside the select */
+    color: #444; /* Sets the text color */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    width: 100%; /* Force the select to fill the wrapper */
+  }
+  
+  .select-wrapper::after {
+    content: '▼'; /* Unicode down arrow character */
+    position: absolute; /* Position it within the wrapper */
+    right: 1em; /* Distance from the right, aligned with padding */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Align the center of the arrow with the center of the select box */
+    pointer-events: none; /* This prevents the arrow from being clickable, which can interfere with the select box */
+    color: #888; /* Arrow color, adjust as needed */
+    font-size: 0.8em; /* Arrow size, adjust as needed */
+  }
+  
   select {
     position: relative; /* Needed for absolute positioning of the pseudo-element */
     background: white;
