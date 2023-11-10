@@ -145,7 +145,7 @@ select::-ms-expand {
 
 /* For custom arrow styles, you might need to add a background image or use a library like FontAwesome */
 select {
-  background: url('/images/arrow.png') no-repeat right white;
+  background: url('https://raw.githubusercontent.com/sagerock/Nov2023Chatbot/main/images/arrow.png') no-repeat right, white;
   background-size: 12px 12px; /* Example size, adjust as needed */
   -webkit-appearance: none; /* Removes the default arrow for iOS */
   -moz-appearance: none; /* Removes the default arrow for Firefox */
