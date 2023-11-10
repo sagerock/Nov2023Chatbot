@@ -3,11 +3,11 @@ body {
   font-size: 16px;
   background-color: #f5f5f5;
   margin: 0;
-  padding: 1vh 1vw; /* 2% of viewport height for vertical padding and 2% of viewport width for horizontal padding */
+  padding: 0vh 1vw; /* 2% of viewport height for vertical padding and 2% of viewport width for horizontal padding */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 92vh;
 }
 
 #chat-container {
