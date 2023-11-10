@@ -124,4 +124,31 @@ body {
     margin: 5px;
     padding: 8px;
   }
+  select {
+    padding: 12px; /* Makes the drop-down taller and easier to tap */
+    font-size: 1em; /* Increases the text size within the drop-down */
+    border: 1px solid #ddd; /* Adds a border for definition */
+    border-radius: 5px; /* Rounds the corners */
+    margin: 10px 0; /* Adds some space above and below the drop-down */
+    width: 100%; /* Ensures it stretches to the full width of its container */
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+    -webkit-appearance: none; /* Removes default styling on iOS */
+    -moz-appearance: none; /* Removes default styling on Firefox */
+    appearance: none; /* Removes default styling */
+    background-color: white; /* Sets a background color */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  }
+  /* You may also want to style the drop-down arrow */
+select::-ms-expand {
+  display: none; /* Hides the default arrow in Internet Explorer */
+}
+
+/* For custom arrow styles, you might need to add a background image or use a library like FontAwesome */
+select {
+  background: url('/images/arrow.png') no-repeat right white;
+  background-size: 12px 12px; /* Example size, adjust as needed */
+  -webkit-appearance: none; /* Removes the default arrow for iOS */
+  -moz-appearance: none; /* Removes the default arrow for Firefox */
+  appearance: none; /* Removes the default arrow */
+}
 }
