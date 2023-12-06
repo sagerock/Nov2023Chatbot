@@ -109,6 +109,8 @@ The front-end code is contained within the `templates` and `static` directories.
 You need to create a .env file and add a line like this:
 OPENAI_API_KEY='sk-GoGeTYouRapIkeYandPUTitHERE'
 
+I try different versions for the model I'm using. Right now I'm using 'gpt-3.5-turbo-1106'. But you can change that to whatever model you like in the app.py file.
+
 ## Usage
 
 Once the application is running, select a specialization from the dropdown menu and type your message into the chat input. Click the "Send" button to receive a response from the chatbot.
